@@ -17,7 +17,7 @@ initial_message = {
 message_list.append(initial_message)
 
 response = bedrock.converse(
-    modelId="us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    modelId="global.anthropic.claude-sonnet-4-5-20250929-v1:0",
     messages=message_list,
     inferenceConfig={
         "maxTokens": 2000,
@@ -59,7 +59,7 @@ image_message = {
 message_list.append(image_message)
 
 response = bedrock.converse(
-    modelId="us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    modelId="global.anthropic.claude-sonnet-4-5-20250929-v1:0",
     messages=message_list,
     inferenceConfig={
         "maxTokens": 2000,
@@ -85,7 +85,7 @@ summary_message = {
 message_list.append(summary_message)
 
 response = bedrock.converse(
-    modelId="us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    modelId="global.anthropic.claude-sonnet-4-5-20250929-v1:0",
     messages=message_list,
     system=[
         { "text": "Please respond to all requests in the style of a pirate." }

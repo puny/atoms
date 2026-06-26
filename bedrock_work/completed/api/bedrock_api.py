@@ -5,7 +5,8 @@ session = boto3.Session()
 
 bedrock = session.client(service_name='bedrock-runtime', region_name='us-east-1') #creates a Bedrock client
 bedrock_model_id = "global.anthropic.claude-sonnet-4-5-20250929-v1:0" #set the foundation model
-prompt = "What is the largest city in New Hampshire?" #the prompt to send to the model
+# prompt = "What is the largest city in New Hampshire?" #the prompt to send to the model
+prompt = "행복은 어디에서 오는가" #the prompt to send to the model
 
 messages = [
     {
