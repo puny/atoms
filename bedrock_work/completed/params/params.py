@@ -28,4 +28,7 @@ response = get_text_response(sys.argv[1], sys.argv[2])
 
 print(response)
 
+# execute the script with the following command:
+# python3 params.py <model_name> <input_content>
+# python3 params.py "mistral.mixtral-8x7b-instruct-v0:1" "Write a haiku:" 
 
