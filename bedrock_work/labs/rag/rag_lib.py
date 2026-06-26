@@ -12,6 +12,7 @@ def get_collection(path, collection_name):
     
     return collection
 
+
 def get_vector_search_results(collection, question):
     
     results = collection.query(
