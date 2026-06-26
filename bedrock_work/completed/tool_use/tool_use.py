@@ -38,7 +38,7 @@ initial_message = {
 message_list.append(initial_message)
 
 response = bedrock.converse(
-    modelId="us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+    modelId="global.anthropic.claude-sonnet-4-5-20250929-v1:0",
     messages=message_list,
     inferenceConfig={
         "maxTokens": 2000,
@@ -109,7 +109,7 @@ if len(follow_up_content_blocks) > 0:
     message_list.append(follow_up_message)
 
     response = bedrock.converse(
-        modelId="us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        modelId="global.anthropic.claude-sonnet-4-5-20250929-v1:0",
         messages=message_list,
         inferenceConfig={
             "maxTokens": 2000,
@@ -155,7 +155,7 @@ if content_block:
     message_list.append(follow_up_message)
     
     response = bedrock.converse(
-        modelId="us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+        modelId="global.anthropic.claude-sonnet-4-5-20250929-v1:0",
         messages=message_list,
         inferenceConfig={
             "maxTokens": 2000,
