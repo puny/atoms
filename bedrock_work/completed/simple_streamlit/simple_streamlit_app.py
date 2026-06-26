@@ -15,3 +15,6 @@ go_button = st.button("Go", type="primary") #display a primary button
 if go_button: #code in this if block will be run when the button is clicked
 
     st.write(f"I like {color_text} too!") #display the response content
+
+
+# run command: streamlit run simple_streamlit_app.py
