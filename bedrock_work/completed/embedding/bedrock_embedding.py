@@ -1,5 +1,6 @@
 import json
 import boto3
+import os
 from numpy import dot
 from numpy.linalg import norm
 
@@ -38,13 +39,15 @@ def calculate_similarity(a, b): #See Cosine Similarity: https://en.wikipedia.org
 #Build the list of embeddings to compare
 items = []
 
-with open("items.txt", "r") as f:
+# 현재 파일을 실행하는 경로를 구함
+cur_path = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(cur_path, "items.txt"), "r") as f:
     text_items = f.read().splitlines()
 
 for text in text_items:
     items.append(EmbedItem(text))
 
-#
 
 for e1 in items:
     print(f"Closest matches for '{e1.text}'")

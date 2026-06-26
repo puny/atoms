@@ -11,8 +11,8 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
-                "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
-                "Write a haiku:"
+                // "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
+                // "Write a haiku:"
             ]
         }
     ]
