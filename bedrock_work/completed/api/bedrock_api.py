@@ -43,7 +43,6 @@ response = bedrock.invoke_model(body=body, modelId=bedrock_model_id, accept='app
 
 response_body = json.loads(response.get('body').read().decode('utf-8')) # read the response
 
-# response_text = response_body["output"]["message"]["content"][0]["text"] #extract the text from the JSON response
 response_text = response_body['content'][0]['text']
 
 print(response_text)
