@@ -26,7 +26,9 @@ body = json.dumps({
     "max_tokens": 1024,
     "top_p": 0.5
     
-}) #build the request payload
+}) 
+
+#build the request payload
 # body = json.dumps({
 #     "schemaVersion": "messages-v1",
 #     "messages": messages,
