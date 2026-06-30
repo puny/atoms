@@ -22,7 +22,7 @@ def initialize_collection(collection_name, source_json_file):
         
         row_count = 0
         
-        with open(source_json_file) as json_file:
+        with open("./data/"+source_json_file) as json_file:
             source_json = json.load(json_file)
             
             for item in source_json:

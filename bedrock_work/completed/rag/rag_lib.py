@@ -28,7 +28,7 @@ def get_rag_response(question):
     session = boto3.Session()
     bedrock = session.client(service_name='bedrock-runtime')
     
-    collection = get_collection("../../data/chroma", "bedrock_faqs_collection")
+    collection = get_collection("./data/chroma", "bedrock_faqs_collection")
     
     search_results = get_vector_search_results(collection, question)
     
